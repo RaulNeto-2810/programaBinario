@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+.sidebar {
+    background-color: #222831;
+    color: white;
+    width: 15em;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 1.25em rgba(0, 0, 0, 10);
+}
+
+.sidebar h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sidebar-item {
+    display: block;
+    padding: 0.625em;
+    background-color: #222831;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.625em;
+    border-radius: 0.3125em;
+}
+
+.sidebar-item:hover {
+    background-color: #31363F;
+}
+
+.principal {
+    margin-left: 18em;
+    padding: 1.875em;
+}
+
+.texto {
+    padding: 1.25em;
+    flex-grow: 1;
+}
+
+.texto h2 {
+    margin-bottom: 2em;
+    color: #31363F;
+}
+
+.texto strong {
+    color: #31363F;
+}
+.texto p {
+    color: #222831d1;
+    font-family:'FreeMono', monospace;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.introducao{
+    background-color: white;
+    padding: 1.25em;
+    border-radius: 0.3125em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.3);
+    max-width: 56.25em; 
+    margin: 0 auto 1.25em; 
+}
+
+.conversao {
+    background-color: white;
+    padding: 1.25em;
+    border-radius: 0.3125em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.3);
+    max-width: 56.25em; 
+    margin: 0 auto 1.25em; 
+}
+
+.calculadora {
+    background-color: white;
+    padding: 1.25em;
+    border-radius: 0.3125em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.3);
+    max-width: 56.25em; /* Defina um máximo de largura para o conteúdo */
+    margin: 0 auto; 
+}
+
+.introducao:hover, .conversao:hover, .calculadora:hover {
+    box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.4);
+}
+
+#home::before {
+    content: url('assets/icons/casa.svg'); /* Insira o caminho para o seu ícone SVG aqui */
+    margin-right: 0.5em; /* Adiciona um espaço à direita do ícone */
+    display: inline-block;
+    width: 1.7em;  /* Ajuste para o tamanho desejado */
+    height: 1.5em; /* Ajuste para o tamanho desejado */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+    
+}
+
+#calculadora::before {
+    content: url('assets/icons/calculadora.png'); /* Insira o caminho para o seu ícone SVG aqui */
+    margin-right: 0.5em; /* Adiciona um espaço à direita do ícone */
+    display: inline-block;
+    width: 1.7em;  /* Ajuste para o tamanho desejado */
+    height: 1.5em; /* Ajuste para o tamanho desejado */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+    
+}
+
+#conversao::before {
+    content: url('assets/icons/repetir.png'); /* Insira o caminho para o seu ícone SVG aqui */
+    margin-right: 0.5em; /* Adiciona um espaço à direita do ícone */
+    display: inline-block;
+    width: 1.7em;  /* Ajuste para o tamanho desejado */
+    height: 1.5em; /* Ajuste para o tamanho desejado */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+    
+}

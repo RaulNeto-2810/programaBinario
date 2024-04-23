@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Binária</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Binárioteca</h1>
+        <div class="sidebar-content">
+            <a href="../home.html" class="sidebar-item" id="home">Início</a>
+            <a href="calculadora.html" class="sidebar-item" id="calculadora">Calculadora</a>
+            <a href="../conversao/conversao.html" class="sidebar-item" id="conversao">Conversões</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="introducao">
+                <h1>Calculadora Binária</h1>
+                <p>
+                    A calculadora binária é uma ferramenta essencial que proporciona uma gama<br>
+                    completa de operações aritméticas,
+                    permitindo realizar soma, subtração, multiplicação<br>
+                    e divisão com números binários de forma precisa e eficiente.</p>
+            </div>
+
+            <div class="container">
+                <div class="numeros">
+                    <div class="primeiro">
+                        <label for="num1">Número Binário 1:</label>
+                        <input type="text" id="num1" placeholder="Digite o número binário 1">
+                    </div>
+                    <div class="segundo">
+                        <label for="num2">Número Binário 2:</label>
+                        <input type="text" id="num2" placeholder="Digite o número binário 2">
+                    </div>
+                </div>
+
+                <div class="operaçoes">
+                    <label for="operacao">Operações:</label>
+                    <select id="operacao">
+                        <option value="somar">Adição (+)</option>
+                        <option value="subtrair">Subtração (-)</option>
+                        <option value="multiplicar">Multiplicação (x)</option>
+                        <option value="divide">Divisão (÷)</option>
+                    </select>
+                </div>
+
+                <button onclick="calcular()">Calcular</button>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+    <script src="calculos.js"></script>
+</body>
+
+</html>

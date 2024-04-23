@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binárioteca</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Binárioteca</h1>
+        <div class="sidebar-content">
+            <a href="#" class="sidebar-item" id="home">Início</a>
+            <a href="calculadora/calculadora.html" class="sidebar-item" id="calculadora">Calculadora</a>
+            <a href="conversao/conversao.html" class="sidebar-item" id="conversao">Conversões</a>
+        </div>
+    </div>
+
+    <div class="principal">
+        <div class="texto">
+            <div class="introducao">
+                <h2>Bem-vindo ao Binárioteca:
+                    <br>Seu Destino para Cálculos e Conversões Binárias!
+                </h2>
+                <p>Se você está pronto para embarcar em uma jornada pelo intrigante mundo dos números binários, você
+                    chegou ao seu destino final. Na Binárioteca, nossa principal missão é proporcionar uma plataforma
+                    completa e intuitiva, projetada para ajudá-lo a compreender e operar com números binários de maneira
+                    eficiente e eficaz.</p>
+                <p>Nossa ferramenta abrange uma vasta gama de recursos, desde as conversões mais simples entre binário,
+                    decimal, hexadecimal e octal até os cálculos mais complexos, como adição, subtração, multiplicação e
+                    divisão. Tudo isso é realizado com facilidade e precisão, graças à nossa interface intuitiva e às
+                    funcionalidades avançadas.</p>
+            </div>
+
+            <div class="conversao">
+                <h2>Conversão de Números Binários</h2>
+                <p><strong>Para Decimal:</strong> Para converter um número binário em decimal, você multiplica cada
+                    dígito binário pela potência de 2 correspondente à sua posição, da direita para a esquerda, e soma
+                    os resultados.
+                    <br>Por exemplo: 1101₂ = (1×2³) + (1×2²) + (0×2¹) + (1×2⁰) = 13₁₀
+                </p>
+                <p><strong>Para Hexadecimal:</strong> Para converter um número binário em hexadecimal, agrupe os dígitos
+                    binários em conjuntos de quatro, da direita para a esquerda, e, em seguida, substitua cada conjunto
+                    por seu equivalente hexadecimal.
+                    <br>Por exemplo: 1101 1100₂ = DC₁₆
+                </p>
+                <p><strong>Para Octal:</strong> Para converter um número binário em octal, agrupe os dígitos binários em
+                    conjuntos de três, da direita para a esquerda, e, em seguida, substitua cada conjunto por seu
+                    equivalente octal.
+                    <br>Por exemplo: 1101 1100₂ = 334₈
+                </p>
+            </div>
+
+            <div class="calculadora">
+                <h2>Cálculo entre Números Binários</h2>
+                <p><strong>Adição:</strong> A adição de números binários é semelhante à adição em base 10. Comece
+                    somando os bits da direita para a esquerda, levando em conta o transporte de um bit para o próximo.
+                    <br>Por exemplo: 1011₂ + 110₂ = 10001₂
+                </p>
+                <p><strong>Subtração:</strong> A subtração de números binários também é semelhante à subtração em base
+                    10, com a consideração de empréstimos.
+                    <br>Por exemplo: 1011₂ − 110₂ = 1001₂
+                </p>
+                <p><strong>Multiplicação:</strong> A multiplicação de números binários é feita multiplicando cada bit do
+                    multiplicando pelo multiplicador, com deslocamentos para a esquerda.
+                    <br>Por exemplo: 101₂ × 11₂ = 1111₂
+                </p>
+                <p><strong>Divisão:</strong>
+                    A divisão de números binários segue um processo semelhante à divisão decimal, onde o divisor é
+                    subtraído do dividendo, com ajustes conforme necessário, até que todos os dígitos tenham sido
+                    processados.
+                    <br>Por exemplo: 1101₂ / 10₂ = 101₂ com resto 1
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

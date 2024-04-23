@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+.sidebar {
+    background-color: #222831;
+    color: white;
+    width: 15em;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 1.25em rgba(0, 0, 0, 10);
+
+}
+
+.sidebar h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sidebar-item {
+    display: block;
+    padding: 0.625em;
+    background-color: #222831;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.625em;
+    border-radius: 0.3125em;
+}
+
+.sidebar-item:hover {
+    background-color: #31363F;
+}
+
+.wrapper {
+    margin-left: 18em;
+    padding: 1.875em;
+}
+
+.content {
+    padding: 1.25em;
+    flex-grow: 1;
+}
+
+.introducao {
+    margin-bottom: 2.5em;
+}
+
+.introducao h1 {
+    margin-bottom: 0em;
+    color: #31363F;
+}
+
+.introducao p {
+    margin-bottom: 1.25em;
+    font-size: 1.25em;
+}
+
+.container {
+    margin-top: 0.25em;
+    text-align: center;
+    background-color: #fff;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
+    max-width: 62.5em; /* Define um máximo de largura para o container */
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.container:hover {
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.3);
+}
+
+.numeros {
+    flex-direction: column; /* Para colocar o segundo número abaixo do primeiro */
+    margin-top: 1.25em;
+}
+
+.primeiro {
+    margin-bottom: 1.25em;
+}
+
+.operaçoes {
+    margin-top: 1.875em;
+    margin-bottom: 3.125em;
+}
+
+label {
+    display: block;
+    color: #222831;
+}
+
+input[type="text"]{
+    padding: 0.625em;
+    margin: 0.3125em;
+    width: 35%;
+
+}
+
+select {
+    padding: 0.625em;
+    margin: 0.3125em;
+}
+
+button {
+    padding: 0.625em 1.25em; /* Ajustado para as unidades em "em" */
+    background-color: #1679AB;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    font-size: 1em; /* Ajustado para as unidades em "em" */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 1.25em; /* 20px ÷ 16px = 1.25em (assumindo 16px como base) */
+    font-size: 1.125em; /* 18px ÷ 16px = 1.125em (assumindo 16px como base) */
+}
+
+#home::before {
+    content: url('../assets/icons/casa.svg'); /* Insira o caminho para o seu ícone SVG aqui */
+    margin-right: 0.5em; /* Adiciona um espaço à direita do ícone */
+    display: inline-block;
+    width: 1.7em;  /* Ajuste para o tamanho desejado */
+    height: 1.5em; /* Ajuste para o tamanho desejado */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+    
+}
+
+#calculadora::before {
+    content: url('../assets/icons/calculadora.png'); /* Insira o caminho para o seu ícone SVG aqui */
+    margin-right: 0.5em; /* Adiciona um espaço à direita do ícone */
+    display: inline-block;
+    width: 1.7em;  /* Ajuste para o tamanho desejado */
+    height: 1.5em; /* Ajuste para o tamanho desejado */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+    
+}
+
+#conversao::before {
+    content: url('../assets/icons/repetir.png'); /* Insira o caminho para o seu ícone SVG aqui */
+    margin-right: 0.5em; /* Adiciona um espaço à direita do ícone */
+    display: inline-block;
+    width: 1.7em;  /* Ajuste para o tamanho desejado */
+    height: 1.5em; /* Ajuste para o tamanho desejado */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+    
+}

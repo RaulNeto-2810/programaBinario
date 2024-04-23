@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases Numéricas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Binárioteca</h1>
+        <div class="sidebar-content">
+            <a href="../home.html" class="sidebar-item" id="home">Início</a>
+            <a href="../calculadora/calculadora.html" class="sidebar-item" id="calculadora">Calculadora</a>
+            <a href="conversao.html" class="sidebar-item" id="conversao">Conversões</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="introducao">
+                <h1>Conversor de Bases Numéricas</h1>
+                <p>O conversor binário é uma ferramenta indispensável que simplifica a conversão de números<br>
+                    entre diferentes bases numéricas, como hexadecimal, decimal, octal e binário.<br>
+                    Proporcionando uma abordagem eficaz e intuitiva para trabalhar com diferentes sistemas numéricos..</p>
+            </div>
+
+            <div class="container">
+
+                <div class="numeros">
+                    <input type="text" id="inputNumero" placeholder="Digite o número">
+                    <select id="inputBase">
+                        <option value="hex">Hexadecimal</option>
+                        <option value="dec">Decimal</option>
+                        <option value="oct">Octal</option>
+                        <option value="bin">Binário</option>
+                    </select>
+                </div>
+
+                <button onclick="convercao()">Converter</button>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+    <script src="conversor.js"></script>
+</body>
+
+</html>
